@@ -1,5 +1,11 @@
 
+html{
+    background-color: #f3f3f3;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 header {
+    font-family: 'PT Sans Narrow', sans-serif;
     background-color:#6caee0;
     color:white;
     padding-bottom: 70px;
@@ -28,11 +34,15 @@ footer {
     padding:5px; 
 }
 
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
 
-
-html{
-    background-color: #f3f3f3;
 }
+
+
+
+
 
 .form-mini-container{
     max-width: 315px;
@@ -54,9 +64,11 @@ html{
 .form-mini{
     box-sizing: border-box;
     padding: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
 
     background-color:  #ffffff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .form-mini .form-row{
@@ -119,6 +131,7 @@ html{
     width: 100%;
     padding: 14px 22px;
     border: 0;
+    font-family: 'Roboto Condensed', sans-serif;
     cursor: pointer;
 }
 
