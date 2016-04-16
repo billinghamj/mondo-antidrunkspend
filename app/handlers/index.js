@@ -4,7 +4,7 @@ const router = Router();
 export default router;
 
 router.post('/mondo-webhook', async (req, res) => {
-	if (req.app.get('limit-enabled')) {
+	if (!req.app.get('limit-enabled')) {
 		res.sendStatus(204);
 		return;
 	}
