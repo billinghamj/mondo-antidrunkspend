@@ -29,7 +29,7 @@ router.post('/mondo-webhook', async (req, res) => {
 
 	const cards = await mondo('get', 'card/list', { account_id });
 
-	for (const card of cards) {
+	for (const card of cards.cards) {
 		await mondo('put', 'card/toggle', null, {
 			card_id: card.id,
 			status: 'INACTIVE',
