@@ -3,6 +3,10 @@ import Router from 'express-promise-router';
 const router = Router();
 export default router;
 
+router.get('/', (req, res) => {
+	res.redirect('/index.html');
+});
+
 router.post('/mondo-webhook', async (req, res) => {
 	const mondo = req.app.get('mondo');
 	const enabled = req.app.get('limit-enabled');
