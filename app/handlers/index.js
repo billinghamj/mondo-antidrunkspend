@@ -22,7 +22,7 @@ router.post('/mondo-webhook', async (req, res) => {
 
 	const balance = await mondo('get', 'balance', { account_id });
 
-	if (Math.abs(balance.spend_today) < amount) {
+	if (Math.abs(balance.spend_today / 100) < amount) {
 		res.sendStatus(204);
 		return;
 	}
